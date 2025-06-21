@@ -14,12 +14,19 @@
 </head>
 <body>
 <h1>ShadowShell Dashboard</h1>
-<p>Generated: Sat Jun 21 21:23:00 CEST 2025</p>
+<p>Generated: Sat Jun 21 21:26:44 CEST 2025</p>
 <div class='section'><h2>💰 Crypto Balance Chart</h2>
 <canvas id='walletChart'></canvas>
 <script>
 const walletData = 
-{"wallets": [{"Why97": "BTC", "address": "1abc...", "balance": 30.1}]}
+{
+  "wallets": [
+    {"name": "Main BTC", "balance": 0.28},
+    {"name": "Backup ETH", "balance": 2.5},
+    {"name": "Wallet X", "balance": 1.1}
+  ]
+}
+
 ;
 const ctx = document.getElementById('walletChart').getContext('2d');
 const walletLabels = walletData.wallets.map(w => w.name);
